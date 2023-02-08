@@ -16,7 +16,7 @@ const start = async () => {
         mongoose.set('strictQuery', false)
         // conecta ao mongo db criado no kubernets
         await mongoose.connect(process.env.MONGO_URI).then(con => {
-            console.log('DB connection succesfully')
+            console.log('DB connection succesfully...')
         })
     } catch(err) {
         console.error(err)
